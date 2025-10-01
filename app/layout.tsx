@@ -1,8 +1,6 @@
 import { Stack } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
-// import 'react-native-reanimated';
 import { Appearance } from 'react-native';
-//import { useColorScheme } from '@/hooks/use-color-scheme';
 import { Colors } from '@/constants/theme';
 import { GestureHandlerRootView, NativeViewGestureHandler } from 'react-native-gesture-handler';
 export const unstable_settings = {
@@ -15,7 +13,7 @@ export default function RootLayout() {
   const theme = colorScheme === "dark" ? Colors.dark : Colors.light;
 
   return (
-    <GestureHandlerRootView>
+    <GestureHandlerRootView style={{ flex: 1 }}>
     
       <Stack screenOptions={{headerStyle: {backgroundColor: 
       theme.headerBackground}, headerTintColor: theme.text, 
@@ -32,7 +30,7 @@ export default function RootLayout() {
       </Stack>
       
       </GestureHandlerRootView>
-      // <StatusBar style="auto" />
+      
    
   );
 }

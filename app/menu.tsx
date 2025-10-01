@@ -16,9 +16,9 @@ export default function MenuScreen() {
         const newSortOrder = sortOrder === 'lowToHigh' ? 'highToLow' : 'lowToHigh';
         const newItems = [...MENU_ITEMS].sort((a, b) => {
             if (newSortOrder === 'lowToHigh') {
-                return a.price - b.price;
+                return Number(a.price) - Number(b.price);
             } else {
-                return b.price - a.price;
+                return Number(b.price) - Number(a.price);
             }
         });
         setSortedMenuItems(newItems);
@@ -26,8 +26,8 @@ export default function MenuScreen() {
     };
 
     const styles = createStyles(theme, colorScheme);
-    const Container = Platform.OS === 'web' ? ScrollView : SafeAreaView;
-
+   
+const Container = Platform.OS === 'web' ? View : SafeAreaView;
     const separatorComp = <View style={styles.separator} />;
     const footerComp = <Text style={styles.footerText}>End of Menu</Text>;
     
@@ -69,7 +69,7 @@ export default function MenuScreen() {
     );
 }
 
-function createStyles(theme, colorScheme) {
+function createStyles(theme: { text: any; background?: string; headerBackground?: string; tint?: string; icon?: string; tabIconDefault?: string; tabIconSelected?: string; }, colorScheme: string | null | undefined) {
     return StyleSheet.create({
         contentContainer: {
             paddingTop: 10,

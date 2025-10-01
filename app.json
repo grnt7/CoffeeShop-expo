@@ -27,6 +27,7 @@
     },
     "plugins": [
       "expo-router",
+     
       [
         "expo-splash-screen",
         {
@@ -43,6 +44,18 @@
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "0eafd91a-6f46-4111-b4bd-38df07edd1e7"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/0eafd91a-6f46-4111-b4bd-38df07edd1e7"
     }
   }
 }
