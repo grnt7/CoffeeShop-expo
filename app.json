@@ -19,7 +19,8 @@
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.papaddog.splashscreenapp"
     },
     "web": {
       "output": "static",
@@ -27,7 +28,6 @@
     },
     "plugins": [
       "expo-router",
-     
       [
         "expo-splash-screen",
         {
@@ -56,6 +56,7 @@
     },
     "updates": {
       "url": "https://u.expo.dev/0eafd91a-6f46-4111-b4bd-38df07edd1e7"
-    }
+    },
+    "owner": "papaddog"
   }
 }

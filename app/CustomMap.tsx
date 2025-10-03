@@ -11,15 +11,15 @@ const CustomMap = () => {
 
   return (
     <div className="map-container">
-      <Map
-        style={{ borderRadius: "20px" }}
-        defaultZoom={13}
-        defaultCenter={markerLocation}
-        gestureHandling={"greedy"}
-        disableDefaultUI
-      >
+      {/* <Map
+      //   style={{ borderRadius: "20px" }}
+      //   defaultZoom={13}
+      //   defaultCenter={markerLocation}
+      //   gestureHandling={"greedy"}
+      //   disableDefaultUI
+      // >
         <Marker position={markerLocation} />
-      </Map>
+      </Map> */}
     </div>
   );
 }
