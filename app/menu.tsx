@@ -75,6 +75,7 @@ function createStyles(theme: { text: any; background?: string; headerBackground?
             paddingTop: 10,
             paddingBottom: 20,
             paddingHorizontal: 12,
+            flex: 1,
         },
         footerText: {
             color: theme.text,

@@ -2,6 +2,8 @@
 // import React, { useState } from "react";
 // import { Map, Marker} from "@vis.gl/react-google-maps";
 
+import { useState } from "react";
+
 const CustomMap = () => {
   // shows marker on London by default
   const [markerLocation, setMarkerLocation] = useState({
