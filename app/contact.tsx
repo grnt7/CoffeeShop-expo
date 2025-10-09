@@ -1,7 +1,9 @@
 
 import { Fontisto } from '@expo/vector-icons';
-import MapView, { Marker } from "react-native-maps";
+//import MapView, { Marker } from "react-native-maps";
+//import MapComponent from '../components/MapComponent';
 //import Iframe from 'react-iframe';
+import MapWrapper from '../components/MapWrapper'; 
 import {
   StyleSheet, View, Text, Appearance,
   Image,
@@ -84,7 +86,7 @@ const openMapApp = async () => {
             <Text>Kansas City, KS  55555-1234</Text>
           </Text>
               {/* --- Replace the Image component with MapView --- */}
-        <MapView
+        {/* <MapView
           style={{ width: '100%', height: 200, borderRadius: 20 }} // Increase height for better visibility
           initialRegion={COFFEE_SHOP_LOCATION}
           // The following props make it static/display-only if you don't want interaction,
@@ -95,17 +97,17 @@ const openMapApp = async () => {
           // rotateEnabled={false}
         >
           {/* Add a Marker for the shop's location */}
-          <Marker
-            coordinate={{
-              latitude: COFFEE_SHOP_LOCATION.latitude,
-              longitude: COFFEE_SHOP_LOCATION.longitude,
-            }}
-            title="Coffee Shop"
-            description="555 Coffee Lane"
-            pinColor="red" // Or any color you prefer
-          />
-        </MapView>
-
+          {/* <Marker */}
+          {/* //   coordinate={{ */}
+          //     latitude: COFFEE_SHOP_LOCATION.latitude,
+          //     longitude: COFFEE_SHOP_LOCATION.longitude,
+          {/* //   }} */}
+          //   title="Coffee Shop"
+          //   description="555 Coffee Lane"
+          //   pinColor="red" // Or any color you prefer
+          {/* // /> */}
+        {/* // </MapView> //*/} 
+        <MapWrapper />
         {/* --- Add a "Get Directions" Button/Link below the MapView --- */}
 <Text onPress={openMapApp} style={{
     textAlign: 'center',
