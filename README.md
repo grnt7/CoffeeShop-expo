@@ -6,6 +6,7 @@
 
 <img width="200" height="500" alt="Contact page" src="https://github.com/user-attachments/assets/9cb3686d-3197-4501-a2bb-fcea3cd4b963"/>
 
+<img width="200" height="500" src=" https://github.com/user-attachments/assets/74837ed0-6d0b-4479-b7bd-5a4d0d3c8140"/>
 
 
 This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
